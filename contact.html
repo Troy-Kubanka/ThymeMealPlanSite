@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+        <title>Contact Us - MealPrep</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+         <!-- Script to have email notification if someone contacts you -->
+         <script type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+         </script>
+         <!-- java scrip function for contact email - emailjs -- if we have time to implement... -->
+         <script type="text/javascript">
+         (function(){
+             emailjs.init("6RO2t-6lAShth4lh5");
+         })();
+         </script>
+
+        <style type="text/css">
+            
+        /*              Search and Nav Section                     */
+/*
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .input-container{
+            display: flex;
+            align-items: center;
+            border: 1px solid #ff6e00;
+            padding: 5px;
+            width: 300px;
+            height: 40px;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            transition: width 1.5s;
+        }
+
+        .input {
+            margin: 10px 50px;
+            margin-left: 20px;
+            width: 100%;
+            color: #ff6e00;
+            border: none;
+            background: transparent;
+            outline: none;
+            transition-delay: 0.5s;
+        }
+
+        .magnifier{
+            position: absolute;
+            right: 15px;
+            width: 25px;
+            text-align: center;
+            margin: 0 auto;
+            cursor: pointer;
+            color: #ff6e00;
+        }
+
+        ul li{
+            display: inline;
+            margin-left: 40px;
+            font-family: sans-serif;
+        }
+*/
+        /* Contact Page */
+
+        .home_contact{
+            position: relative;
+            width: 80%;
+            justify-content: space-between; 
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            padding: 70px 8% 0; 
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .contact-text h2{
+            color: black;
+            font-size: 90px;
+            margin: 20px 0;
+            text-align: center;
+            }
+            .contact-text h2 span{
+                color: #ff6e00;
+        }
+        .contact-text h4{
+            margin: 10px 0;
+            color: black;
+            font-size: 45px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .contact-text p{
+            color: black;
+            font-size: 25px;
+            text-align: center;
+        }
+       
+        .contact-form{
+            position: relative;
+        }
+        .contact-form form input, form select, form textarea{
+            border: none;
+            outline: none;
+            width: 90%;
+            padding: 18px;
+            background: #f2c4a2; /* #cae3ee; */
+            border-radius: #ff6e00;
+            color: rgb(77, 69, 69);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .contact-form textarea{
+            resize: none;
+            height: 75px;
+        }
+        
+        .contact-form form input[type="submit"] {
+            display: inline-block;
+            padding: 12px 28px;
+            width: 98%;
+            background: #ee7b24;
+            border-radius: 40px; /* removes corners */
+            font-size: 18px;
+            color: #081b29; 
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 0 5px#ee7b24,
+                        0 0 25px #ee7b24;      
+            }
+            .contact-form form input[type="submit"]:hover {
+                box-shadow: 0 0 5px #ee7b24, 
+                            0 0 25px #ee7b24, 
+                            0 0 50px #ee7b24, 
+                            0 0 150px #ff6e00;
+        }
+
+        </style>
+
+    </head>
+
+     <nav>
+	<img src="./images/thymeyboi_2.png" alt="a very cute orange owl" width="4.5%"/>
+        <form class="input-container">
+
+            <input type="text" class="input" placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass magnifier"></i>
+        </form>
+        <ul>
+            <li><a href="all_meals.php">Meals</a></li>
+	    <li><a href="all_drinks.php">Drinks</a></li>
+            <li><a href="popularMealPlans.html">Popular Meal Plans</a></li>
+            <li><a href="weekly_meal_plan.php">Plan Your Meals</a></li>
+            <li><a href="shoppingList.php">Shopping List</a></li>
+        </ul>
+    </nav>
+     <br>
+    <br>
+     <br>
+     <br>
+
+
+
+<body style="background: whitesmoke;">
+<!-- contact section -->
+    <section class="home_contact" id="home_contact">
+        <div class="contact-text" style="margin-top: -40px;" >
+            <h2><span>Contact</span> Us</h2>
+            <h4>Share Your Recipes</h4>
+            <p> Know a special recipe? Share it with the world<br>and have a chance to be featured! 
+            </p>
+        </div>
+        
+        <div class="contact-form">
+            <form id="myForm" action="">
+                <input href="#home_contact" type="" id="sender" placeholder="Username *" required>
+
+                <select style="width: 97.5%;"> 
+                    <option>Your Submission *</option>
+                    <option>Meal Plan</option>
+                    <option>Specialty Dishes</option>
+                    <option>Drinks</option>
+                    <option>Appetizers</option>
+                    <option>Desserts</option>
+                    <option>Other</option>
+                 </select>
+
+                <select style="width: 97.5%;"> 
+                    <option>Category *</option>
+                    <option>Holiday</option>
+                    <option>Seasonal</option>
+                    <option>Weight Loss</option>
+                    <option>Workout</option>
+                    <option>Gluten Free Meals</option>
+                    <option>Other</option>
+                 </select>
+
+                 <label for="fileInput">Upload Your Recipe:</label>
+                 <input type="file" id="fileInput" name="fileInput">
+
+                <textarea type="" name="" id="message" cols="20" rows="5" placeholder="Tell Us More"></textarea> 
+                <input type="submit" onclick=sendMail() value="Submit" class="send"> 
+                                    <!-- if there is time, incorporate JS email -->
+            </form>
+        </div>
+        
+    </section>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

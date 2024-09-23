@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+
+margin:0;
+
+padding:0;
+
+}
+
+a {
+  color: #111;
+  text-decoration:none;
+}
+
+#html{
+#background-attachment: fixed;
+#background-color: black;
+#background-blend-mode: lighten;
+#backdrop-filter: blur(8px) brightness(0.5);
+#background-image: linear-gradient(145deg, rgba(255,110,0,1), rgba(86,9,121,1));
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color:white;
+    filter:opacity(95%);
+    z-index: 1100;
+}
+
+nav a:hover{ 
+	color: #ff6e00;  
+}
+
+.banner_image {
+     width: 100%;
+     height:300px;
+     object-fit:cover;
+  }
+
+.banner {
+     left:0;
+     right:0;
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     filter: opacity(90%);
+   }
+
+footer{
+     position: relative;
+     display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-items:center;
+     background-color: #ff6e00;
+     filter: opacity(80%);
+}
+
+footer ul li{
+   justify:right;
+}
+
+.landing_2{
+   display:flex;
+   align-items:center;
+   flex-wrap: nowrap;
+   flex-direction:row;
+   justify-content: space-around;
+   
+}
+
+.icon_bin{
+   display:flex;
+   align-items:center;
+   flex-wrap: nowrap;
+   flex-direction:column;
+   justify:center;
+   text-align:center;
+   background-color: #ff6e00;
+   border-radius: 10px;
+   padding: 20px;
+   filter: opacity(80%);
+
+}
+
+
+
+.fa-circle{
+   color:white;
+}
+
+.fa-burger{
+   color:#ff6e00;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ff6e00;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: width 1.5s;
+}
+
+.input {
+    margin: 10px 50px;
+    margin-left: 20px;
+    width: 100%;
+    color: #ff6e00;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition-delay: 0.5s;
+}
+
+.magnifier{
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ff6e00;
+}
+
+ul li{
+    display: inline;
+    margin-left: 40px;
+    font-family: sans-serif;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 10px 10px 40px 5px #e0e0e0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+
+    transition: transform 0.5s ease;
+}
+.container:hover{
+    transform: translateY(-15px);
+    transform: scale(1.05);
+}
+
+
+.content-container h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: #2c2c2c;
+}
+
+.content-container p{
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: #444444;
+    width: 26rem;
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: "Cambria, Cohin, Georgia, Times, Times New Roman, serif";
+
+}
+
+h4{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size 25px;
+    font-family: "Cambria, Cohin, Georgia, Times, Times New Roman, serif";
+}
+
+/*  Increase size for images in the future */       
+.img{
+    transform: translateX(-120px);
+    margin-top: 1rem;
+    width: 350px;
+    height: 350px;
+    border-radius: 300px;
+}
+ 
+
+.ingredients{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 50px;
+}
+.ingredients span{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+/* maybe add border and style to description box??? */
+.ing {
+    padding: 10px 20px;
+    border: 2px solid #ff6e00;
+    font-family: sans-serif;
+    border-radius: 100px;
+}
+
+/* see more buttons that can link to a pdf of details + download/print */
+/*button{
+    border-radius: 20px;
+    font-size: 20px;
+    background: white;
+    }
+*/
+    button:hover{
+        border-color: #ff6e00;
+        cursor: pointer;
+}
+
+/*formatting for tables */
+section {
+    float: left;
+    width: 500px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px dashed black;
+    padding: .2em .5em;
+    vertical-align: top;
+    text-align: left;
+}
+
+/*formatting for icon database view */
+.page_selectors{
+    width: 300px;
+    width: 25%;
+    margin: auto;
+}
+
+.all_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:75%;
+    margin: auto;
+}
+
+.view_data img{
+    width: 150px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.recipe_block{
+    margin: 15px;
+    height: 500px;
+    width: 200px;
+    box-shadow: 10px 10px 40px 5px #e0e0e0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    transition: transform 0.5s ease;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.recipe_block:hover{
+    transform: translateY(-15px);
+    transform: scale(1.05);
+}
+
+.recipe_block button{
+    margin-bottom: 10px;
+}
+
+/*formatting for table database view*/
+.table_selectors{
+    float: left;
+    width: 25%;
+    text-align: right;
+    height: 100%;
+    margin-right: 10px;
+}
+.table_view{
+    float: center;
+}
+
+/*formatting for viewing individual recipe pages */
+
+.recipe_page{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin:auto;
+    padding: 10px;
+}
+.recipe_page img{
+    border: 2px solid black;
+    width: 400px;
+    align-self: center;
+}
+
+.recipe_page h2{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.recipe_page h3,h4{
+    text-align: center;
+}
+
+.recipe_page p{
+    text-align: center;
+}
+
+.recipe_page a{
+    text-align: center;
+}

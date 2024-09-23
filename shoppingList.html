@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shopping List</title>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th {
+            font-size: 25px;
+        }
+
+        td {
+            font-size: 17px;
+        }
+
+        .flex {
+            display: flex;
+            background-color:#ff3600;
+        }
+    </style>
+</head>
+
+<nav>
+    <img src="./images/thymeyboi_2.png" alt="a very cute orange owl" width="4.5%" />
+    <form class="input-container">
+
+        <input type="text" class="input" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass magnifier"></i>
+    </form>
+    <ul>
+        <li><a href="all_meals.php">Meals</a></li>
+        <li><a href="all_drinks.php">Drinks</a></li>
+        <li><a href="popularMealPlans.html">Popular Meal Plans</a></li>
+        <li><a href="weekly_meal_plan.php">Plan Your Meals</a></li>
+    </ul>
+</nav>
+<br /><br /><br /><br />
+
+<body>
+
+
+
+    <div class="flex"></div>
+    <h1>Shopping List</h1>
+    <!---<h2>All the ingredients for all the recipes you've added</h2>--->
+    <table class="center">
+        <tr>
+            <th>Ingredients</th>
+        </tr>
+        <!---<?php foreach ($shoppingList as list) { ?>
+        <tr>
+            <td> <?php echo $list[$strIngredient]; ?></td>
+        </tr>
+        <?php }>--->
+        <tr>
+            <td>balls</td>
+        </tr>
+    </table>
+    </div>
+    <footer>
+        <p>
+            &copy;<?php echo date("Y"); ?> Caroline Fields, Ash Corcoran, Owen Kelley, Troy Kubanka, and Eli Lemons
+
+            <ul>
+                <li style="float:right"><a href="about.html">About<a></li>
+                <li style="float:right"><a href="contact.html">Contact</a></li>
+            </ul>
+    </footer>
+
+</body>
+</html>
